@@ -1,0 +1,8 @@
+<h1>Bookmarks</h1>
+<ul>
+  <%@bookmarks.each do |bookmark|%>
+  <li><a href="/bookmarks/<%=bookmark.id%>"><%=bookmark.name%></a></li>
+  <%end%>
+</ul>
+<p><a href="/new_bookmark/1">Add a New Bookmark</a></p>
+
